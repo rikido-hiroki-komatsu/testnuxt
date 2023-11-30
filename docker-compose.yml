@@ -1,0 +1,13 @@
+version: '3.9'													
+services:													
+  frontend:													
+    build: .													
+    ports:													
+      - 3000:3000							 						
+    volumes:													
+      - .:/opt/meiji-gvhd													
+    environment:													
+      - HOST=0.0.0.0													
+      - port=3000													
+    tty: true													
+    privileged: true													
